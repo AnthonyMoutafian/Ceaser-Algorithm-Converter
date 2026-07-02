@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ceaser Algo</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <form class="form" action="/text-to-algo" method="POST">
+      <input type="text" name="text" placeholder="enter your text" />
+      <button type="submit">Submit</button>
+    </form>
+    <form class="form" action="/algo-to-text" method="POST">
+      <input type="text" name="text" placeholder="enter ceaser algo text" />
+      <button type="submit">Submit</button>
+    </form>
+    <p class="text">Text -</p>
+    <% if (typeof result !== "undefined") { %>
+      <span class="text"> <%= result %></span>
+    <% } %>
+  </body>
+</html>
